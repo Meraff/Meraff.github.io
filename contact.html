@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HiLCoE School Of Computer Science & Technology</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="sub-header">
+     <nav>
+       <div class="menu-icons">
+         <i class="fa fa-bars" id="menuIcon" onclick="showMenu()"></i>
+         <i class="fa fa-times" id="closeIcon" onclick="hideMenu()"></i>
+       </div>
+       <div class="nav-links" id="navLinks">
+         <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="course.html">COURSE</a></li>
+           <li><a href="blog.html">BLOG</a></li>
+           <li><a href="contact.html">CONTACT</a></li>
+         </ul>
+       </div>
+     </nav>
+<h1>Contact Us</h1>
+ </section>
+ <!-----contact us------> 
+<section class="location">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.369841867971!2d38.762032399999995!3d9.0299865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b844b428bd1d9%3A0x2439574d6dcdd0e0!2sHiLCoE%20School%20of%20Computer%20Science%20and%20Technology!5e0!3m2!1sen!2set!4v1735887953537!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+  <div class="row"></div>
+   <div class="contact-col"></div>
+    <div>
+	<i class="fa fa-home"></i>
+	<span>
+	</div>
+	  <h5>Arat Kilo, Telecom Building</h5>
+      <p>Addis Ababa, Ethiopia</p>
+	</span>
+  </div>
+   <div>
+    <i class="fa fa-phone"></i>
+	<span>
+	  <h5>+251 111 564900, +251 111 564888</h5>
+      <p>Monday to Saturday,8:30PM to 6:00PM</p>
+	</span>
+  </div>
+   <div>
+    <i class="fa fa-envelope-o"></i>
+	<span>
+	  <h5>info@hilcoe1.net</h5>
+      <p>Email us your query</p>
+	</span>
+  </div>
+  </div>
+  </div>
+ <div class="contact-col">
+  <form action="Form-handler.php" method="post">
+    <input type="text" name="name"placeholder="Enter your name" required>
+	<input type="email" name="email" placeholder="Enter email address" required>
+    <input type="text" name="subject" placeholder="Enter your subject" required>
+	<textarea rows="8" name="message" placeholder="Message" required></textarea>
+    <button type="submit" class="first-btn red-btn"> Send Message</button>
+	</form>
+	</div>
+</section>
+
+<!-----footer------> 
+<section class="footer">
+  <h4>About Us</h4>
+        <p>HiLCoE is dedicated to shaping the future of technology through education, research, and innovation.</p>
+    <div class="icons">
+  	  <i class="fa fa-facebook"></i>
+	  <i class="fa fa-twitter"></i>
+	  <i class="fa fa-instagram"></i>
+	  <i class="fa fa-linkedin"></i>
+    </div>
+	<p>© 2024 HiLCoE. All Rights Reserved.</p>
+   <p>Designed and Developed by Our Team.</p>
+</section>
+ <!--- JavaScript for Toggle Menu -----> 
+ <script>
+   var navLinks = document.getElementById("navLinks");
+   var menuIcon = document.getElementById("menuIcon");
+   var closeIcon = document.getElementById("closeIcon");
+
+   // Initially, show the menu icon and hide the close icon
+   closeIcon.style.display = "none";
+
+   function showMenu() {
+       navLinks.style.right = "0"; // Slide menu into view
+       menuIcon.style.display = "none"; // Hide menu icon
+       closeIcon.style.display = "block"; // Show close icon
+   }
+
+   function hideMenu() {
+       navLinks.style.right = "-200px"; // Slide menu out of view
+       menuIcon.style.display = "block"; // Show menu icon
+       closeIcon.style.display = "none"; // Hide close icon
+   }
+ </script>
+
+</body>
+</html>

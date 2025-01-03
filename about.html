@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HiLCoE School Of Computer Science & Technology</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="sub-header">
+<section class="sub-header">
+     <nav>
+       <div class="menu-icons">
+         <i class="fa fa-bars" id="menuIcon" onclick="showMenu()"></i>
+         <i class="fa fa-times" id="closeIcon" onclick="hideMenu()"></i>
+       </div>
+       <div class="nav-links" id="navLinks">
+         <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="course.html">COURSE</a></li>
+           <li><a href="blog.html">BLOG</a></li>
+           <li><a href="contact.html">CONTACT</a></li>
+         </ul>
+       </div>
+     </nav>
+<h1> About Us</h1>
+ </section>
+ 
+<!----about us content----->
+
+<section class="about-us">
+  <div class="row">
+  <div class="about-col">
+      <h1>Our Mission and Values</h1>
+      <p>HiLCoE is a specialized computer science and technology college and has always placed great emphasis on delivering high-quality education and producing graduates with a good practical knowledge of computing in a wide variety of areas. In its more than two decades of excellence in ICT Education, HiLCoE has earned a reputation for producing high-quality graduates with the ability to apply their knowledge to practical situations.</p> 
+  <p>HiLCoE’s underlying philosophy is to focus on scientific and engineering foundations so that graduates remain self-learners and productive with the pace of technology and business agility. HiLCoE strives to prepare its students to participate and reap the benefits of the digitalization opportunities with focuses on both theoretical and practical approaches in the real-world applications. Graduates are thus expected to use the skills and techniques they acquire to solve critical problems in digitalizing economy, business, health care, education, tourism, Banking – fintech and financial industry.</p>
+  <a href="" class="about-btn red-btn">EXPLORE NOW</a>
+      </div>
+    <div class="about-col">
+    <img src="images/aboutus.png"/>
+      </div>
+</section>	  
+ <section class="course">
+   <h1>Courses We Offer</h1>
+   <p>Learn from the best in the field with hands-on experience and cutting-edge resources.</p>   
+    
+	<div class="row">
+     <div class="course-col">
+        <h3>Undergraduate Programs</h3>
+         <p>Our undergraduate courses provide foundational knowledge and practical skills for aspiring professionals.</p>
+	</div>
+	
+	  <div class="course-col">
+   <div class="col">
+                <h3>Graduate Programs</h3>
+                <p>Advance your career with our specialized graduate degrees tailored to industry needs.</p>
+            </div>	</div>
+	
+	  <div class="course-col">
+       <h3>Short Courses</h3>
+       <p>Explore our short courses for quick, targeted learning opportunities.</p>
+	</div>
+  </div>
+   </section>
+<!-----footer------>
+<section class="footer">
+  <h4>About Us</h4>
+        <p>HiLCoE is dedicated to shaping the future of technology through education, research, and innovation.</p>
+    <div class="icons">
+  	  <i class="fa fa-facebook"></i>
+	  <i class="fa fa-twitter"></i>
+	  <i class="fa fa-instagram"></i>
+	  <i class="fa fa-linkedin"></i>
+    </div>
+	<p>© 2024 HiLCoE. All Rights Reserved.</p>
+   <p>Designed and Developed by Our Team.</p>
+</section>
+ <!--- JavaScript for Toggle Menu -----> 
+ <script>
+   var navLinks = document.getElementById("navLinks");
+   var menuIcon = document.getElementById("menuIcon");
+   var closeIcon = document.getElementById("closeIcon");
+
+   // Initially, show the menu icon and hide the close icon
+   closeIcon.style.display = "none";
+
+   function showMenu() {
+       navLinks.style.right = "0"; // Slide menu into view
+       menuIcon.style.display = "none"; // Hide menu icon
+       closeIcon.style.display = "block"; // Show close icon
+   }
+
+   function hideMenu() {
+       navLinks.style.right = "-200px"; // Slide menu out of view
+       menuIcon.style.display = "block"; // Show menu icon
+       closeIcon.style.display = "none"; // Hide close icon
+   }
+ </script>
+
+</body>
+</html>

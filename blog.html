@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HiLCoE School Of Computer Science & Technology</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="sub-header">
+     <nav>
+       <div class="menu-icons">
+         <i class="fa fa-bars" id="menuIcon" onclick="showMenu()"></i>
+         <i class="fa fa-times" id="closeIcon" onclick="hideMenu()"></i>
+       </div>
+       <div class="nav-links" id="navLinks">
+         <ul>
+            <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="course.html">COURSE</a></li>
+           <li><a href="">BLOG</a></li>
+           <li><a href="contact.html">CONTACT</a></li>
+         </ul>
+       </div>
+     </nav>
+<h1>Our certificate & Online Programs For 2024</h1>
+ </section>
+ <!----blod content---->
+<section class="blog-content">
+    <div class="row">
+     <div class="blog-left">
+     <img src="images/facilities.jpg">
+     <h2>0ur Certificate & Online Programs</h2>
+   <p>That’s where our ISO27001 training course comes in. Whether you are a beginner or an expert, we have a course that suits your role and level of experience.
+Our courses will help you familiarize yourself with the standard, understand how to implement an ISMS, and how to audit it.
+You will also learn about the latest changes in ISO27001:2022 and how to transition your ISMS to the new version.</p>
+<br>
+<p>Our courses are designed by experienced instructors who have industrial experience, practical knowledge, professionally competent ISO27001 trainers, and its application in various industries.
+They will guide you through interactive sessions, real-life exercises, and role-play simulations that will help you practice what you learn.
+</p>
+<br>
+<p>You will also get access to valuable resources, such as sample documents, templates, checklists, and exam questions.
+Don’t miss this opportunity to learn about ISO27001 and boost your career prospects in information security.<br>
+Enrol in our ISO27001 training course today and get ready to become an ISO27001 professional!</p>
+  <div class="comment-box">
+   <h3>Leave a comment</h3>
+   <form class="comment-form">
+   <input type="text" placeholder="Enter Name">
+   <input type="email" placeholder="Enter Email">
+   <textarea rows="5" placeholder="Your comment"></textarea>
+   
+   <button type="submit" class="first-btn red-btn"> Post comment</button>
+   </form>
+   </div>
+  
+  
+   </div>
+      <div class="blog-right">
+	  <h3> Post Categories </h3>
+	  <div>
+	     <span>B.Sc. Degree Programs</span>
+	   </div>
+	    <div>
+	     <span>Online Learning Resources</span>
+	   </div>
+	    <div>
+	     <span>Career Guidance</span>
+	   </div>
+	    <div>
+	     <span>Academic Research</span>
+	   </div>
+	   
+</div>
+
+</section>
+
+
+
+
+
+
+<!-----footer------> 
+<section class="footer">
+  <h4>About Us</h4>
+        <p>HiLCoE is dedicated to shaping the future of technology through education, research, and innovation.</p>
+    <div class="icons">
+  	  <i class="fa fa-facebook"></i>
+	  <i class="fa fa-twitter"></i>
+	  <i class="fa fa-instagram"></i>
+	  <i class="fa fa-linkedin"></i>
+    </div>
+	<p>© 2024 HiLCoE. All Rights Reserved.</p>
+   <p>Designed and Developed by Our Team.</p>
+</section>
+ <!--- JavaScript for Toggle Menu -----> 
+ <script>
+   var navLinks = document.getElementById("navLinks");
+   var menuIcon = document.getElementById("menuIcon");
+   var closeIcon = document.getElementById("closeIcon");
+
+   // Initially, show the menu icon and hide the close icon
+   closeIcon.style.display = "none";
+
+   function showMenu() {
+       navLinks.style.right = "0"; // Slide menu into view
+       menuIcon.style.display = "none"; // Hide menu icon
+       closeIcon.style.display = "block"; // Show close icon
+   }
+
+   function hideMenu() {
+       navLinks.style.right = "-200px"; // Slide menu out of view
+       menuIcon.style.display = "block"; // Show menu icon
+       closeIcon.style.display = "none"; // Hide close icon
+   }
+ </script>
+
+</body>
+</html>
